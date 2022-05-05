@@ -236,7 +236,7 @@
                 },
                 "APP_REPO_NAME": "devenes-repo/phonebook-app",
                 "GITHUB_REPO": "https://github.com/devenes/docker-swarm-ecr-cloudformation-app.git",
-                "GIT_FILE_URL": "https://raw.githubusercontent.com/devenes/docker-swarm-ecr-cloudformation-app/main/"
+                "GIT_FILE_URL": "https://raw.githubusercontent.com/devenes/docker-swarm-ecr-cloudformation-app/master/"
               }
             ]
           }
