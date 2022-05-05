@@ -1,4 +1,4 @@
-# Docker Swarm Deployment of Python Flask Phonebook Application with MySQL using AWS CloudFormation
+# Automated Docker Swarm Deployment of Python Flask App using AWS CloudFormation
 
 ## Description
 
