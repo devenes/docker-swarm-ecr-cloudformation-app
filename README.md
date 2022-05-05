@@ -1,4 +1,4 @@
-# Automated Docker Swarm Deployment of Python Flask App using AWS CloudFormation
+# Automated Docker Swarm Deployment of Python Flask Web App using AWS CloudFormation
 
 ## Description
 
@@ -110,11 +110,33 @@ This project aims to deploy the Phonebook Application web application with Docke
 
   - Phonebook App Website URL, Visualization App Website URL should be given as output by AWS CloudFormation Service, after the stack created.
 
+## Error: `unable to prepare context`
+
+You will have the following error when you try to build your image from your GitHub repository using the `docker build` command for building and pushing the image to the AWS ECR repository later on.
+
+- Please check your branch name on GitHub repository.
+- And make sure that it is not a branch name that is not allowed to be used for Docker build.
+- Your branch name should be `master` which is allowed to be used for Docker build in this case.
+
+```bash
+[ec2-user@grand-master ~]$ docker build --force-rm -t "12345678910.dkr.ecr.us-east-1.amazonaws.com/devenes-repo/phonebook-app:latest" https://github.com/devenes/docker-swarm-ecr-cloudformation-app.git
+unable to prepare context: unable to 'git clone' to temporary context directory: error fetching: fatal: couldn't find remote ref master
+:exit status 128
+```
+
+![Error](./readme/build.png)
+
+---
+
 ### At the end of the project, following topics are to be covered;
 
 - Docker Swarm Deployment
 
 - Web App and MySQL Database Configuration in Docker Swarm
+
+- Container Overlay Networking
+
+- Container Orchestration and Solutions Architecture
 
 - Bash scripting
 
