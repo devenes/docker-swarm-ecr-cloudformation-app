@@ -1,0 +1,13 @@
+.git
+.vscode
+.gitignore
+.DS_Store
+*.md
+*.txt
+*.sh
+./readme/
+*.png
+*.jpg
+*.gif
+LICENSE
+Makefile
