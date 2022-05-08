@@ -3,7 +3,6 @@
 .gitignore
 .DS_Store
 *.md
-*.txt
 *.sh
 ./readme/
 *.png
